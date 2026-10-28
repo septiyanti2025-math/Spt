@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Bunga Matahari</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌻 Galeri Bunga Matahari</h1>
+        <p>Keindahan bunga yang membawa kebahagiaan</p>
+    </header>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#tentang">Tentang</a>
+    </nav>
+
+    <section class="hero" id="beranda">
+        <h2>Selamat Datang di Galeri Bunga</h2>
+        <p>Nikmati keindahan bunga matahari yang indah dan cerah.</p>
+        <a href="#galeri" class="tombol">Lihat Galeri</a>
+    </section>
+
+    <section id="galeri">
+        <h2 class="judul">Koleksi Bunga Matahari</h2>
+
+        <div class="galeri">
+            <div class="kartu">
+                <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=600&q=80"
+                     alt="Pemandangan alam saat matahari terbit">
+                <h3>Keindahan Alam</h3>
+                <p>Alam yang indah memberikan ketenangan.</p>
+            </div>
+
+            <div class="kartu">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=600&q=80"
+                     alt="Bunga berwarna cerah">
+                <h3>Bunga Berwarna Cerah</h3>
+                <p>Warna bunga memberikan suasana bahagia.</p>
+            </div>
+
+            <div class="kartu">
+                <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=600&q=80"
+                     alt="Bunga matahari">
+                <h3>Bunga Matahari</h3>
+                <p>Simbol keceriaan dan semangat baru.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="tentang">
+        <h2>Tentang Website</h2>
+        <p>
+            Website ini dibuat menggunakan HTML untuk menyusun
+            struktur halaman dan CSS untuk mengatur warna,
+            tata letak, gambar, serta tampilan website.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Galeri Bunga Matahari | Dibuat dengan HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdf2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Bagian header */
+header {
+    background-color: #f9c80e;
+    color: #503800;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+/* Menu navigasi */
+nav {
+    background-color: #3c6e47;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffdf70;
+}
+
+/* Bagian utama */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(
+        135deg,
+        #fff1a8,
+        #f9c80e
+    );
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #3c6e47;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+.tombol:hover {
+    background-color: #254b2e;
+}
+
+/* Galeri */
+#galeri {
+    padding: 50px 20px;
+}
+
+.judul {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3c6e47;
+}
+
+.galeri {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.kartu {
+    background-color: white;
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px #00000020;
+    transition: transform 0.3s;
+}
+
+.kartu:hover {
+    transform: translateY(-8px);
+}
+
+.kartu img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kartu h3 {
+    color: #3c6e47;
+    margin: 15px 10px 5px;
+}
+
+.kartu p {
+    padding: 0 15px 20px;
+}
+
+/* Tentang website */
+.tentang {
+    background-color: #e8f3df;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.tentang h2 {
+    color: #3c6e47;
+    margin-bottom: 15px;
+}
+
+.tentang p {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #254b2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .kartu {
+        width: 100%;
+        max-width: 350px;
+    }
+}
